@@ -11,6 +11,7 @@ body{
 }
 header {
     background-color: aquamarine;
+    width: 100%;
 
 }
 #logo {
