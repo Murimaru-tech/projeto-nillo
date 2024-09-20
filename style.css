@@ -14,6 +14,8 @@ header {
     background-color: aquamarine;
 
 }
-header div {
-    height:;
+#logo {
+    height:100px;
+    display: flex;
+    justify-content: center;
 }
