@@ -36,9 +36,9 @@ section.slider{
     display: flex;
 }
 
-.slider-content input{
+/*.slider-content input{
     display: none;
-}
+}*/
 
 .slide-box{
     width: 25%;
@@ -75,6 +75,6 @@ section.slider{
     background-color: rgb(0, 0, 0);
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1{
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2{
     background-color: black;
 }
