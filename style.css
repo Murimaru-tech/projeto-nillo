@@ -1,12 +1,9 @@
 @charset'UTF-8';
-
-
 :root{
-    --font-p:;
-    --font-t:;
+    --font-p:"Montserrat", "sans-serif";
+    --font-t:"League-gothic", "bebas-neue";
     
 }
-
 body{
     margin: 0;
     padding: 0;
@@ -17,9 +14,25 @@ header {
 
 }
 #logo {
-    height:100px;
+    height: 100px;
+    position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#logo img {
+    height: 100px;
+    position: absolute;
+}
+
+#fc {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.411);
+    z-index: 99;
 }
 
 section.slider{
