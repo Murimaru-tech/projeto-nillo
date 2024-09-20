@@ -1,7 +1,4 @@
 @charset'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root{
     --font-p:"Montserrat", "sans-serif";
     --font-t:"League-gothic", "bebas-neue";
@@ -36,4 +33,61 @@ header {
     top: 0;
     box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.411);
     z-index: 99;
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0; /*Importante para não criar paddings adicionais caso seja aberto em algum mobile ou telas maiores*/
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,.nav-auto div{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 8px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: black;
 }
